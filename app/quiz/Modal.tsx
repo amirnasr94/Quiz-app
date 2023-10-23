@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Modal = () => {
+
+const Modal = ({showModal}:{showModal:boolean}) => {
+    if (!showModal) return null;
+    
   return (
-    <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true" >
         {/* <!--
             Background backdrop, show/hide based on modal state.
 

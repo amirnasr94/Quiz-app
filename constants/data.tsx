@@ -1,6 +1,6 @@
-import { Question } from "./modal";
+import type {Question} from "./modal";
 
-export const question:Question[] = [
+export const questions:Question[] = [
     {
         id:1,
         title:"The number of Olympic rings?",
